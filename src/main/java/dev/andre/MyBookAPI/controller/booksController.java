@@ -23,7 +23,6 @@ public class booksController {
 
     @CrossOrigin("*")
     @PostMapping("/add")
-
     public ResponseEntity<books> addBook(@RequestBody books book) {
         books newBook = service.createBook(book);
         return new ResponseEntity<>(newBook, HttpStatus.CREATED);
@@ -59,9 +58,6 @@ public class booksController {
         service.deleteBook(id);
 
     }
-
-
-
 
 
 

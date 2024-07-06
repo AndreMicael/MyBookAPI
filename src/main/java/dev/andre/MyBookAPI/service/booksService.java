@@ -48,6 +48,10 @@ public class booksService {
 
     // Atualizar livro
 
+    // Atualizar livro
+    public books updateBook(books book) {
+        return repo.save(book);
+    }
 
 
 }
